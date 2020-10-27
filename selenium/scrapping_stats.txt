@@ -1,0 +1,21 @@
+Stats for one city
+Name : Dallas, Texas
+Total pages: 7300+ <7400
+rows per page : 30-60
+Total number of rows in data : 273565
+scrapped data in sql size : 49MB
+after converting into excel : 33MB
+Total Time to scrap using single user login : 6hrs approx
+
+challenges faced:
+No multiple logins allowed
+no multiple user ids provided
+
+cloud deployment(AWS):
+
+EC2 insatnce > t2.medium
+extra storage will be required when scrapping data for whole 500 city list
+
+
+
+ 
