@@ -1,0 +1,13 @@
+Install the official Firefox Beta PPA
+$ sudo apt-add-repository ppa:mozillateam/firefox-next
+(this will add the file /etc/apt/sources.list.d/mozillateam-firefox-next-trusty.list and also fetch the PPA’s key, which enables your Ubuntu system to verify that the packages in the PPA have not been interfered with since they were built)
+Run apt-get update
+$ sudo apt-get update
+Install firefox and xvfb (the X windows virtual framebuffer) packages
+$ sudo apt-get install firefox xvfb
+Run Xvfb in the background and specify a display number (10 in my example)
+$ Xvfb :10 -ac &
+Set the DISPLAY variable to the number you chose
+$ export DISPLAY=:10
+Test that you can run firefox in the foreground with no errors
+$ firefox
